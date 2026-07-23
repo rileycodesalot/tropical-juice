@@ -3,36 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home · tropicaljuice.me</title>.
+    <title>home · tropicaljuice.me</title>
 
     <link rel="icon" href="./freaky cat.jpg" type="image/x-icon">
-    
-    <link rel="stylesheet" href="./css/code-block.css">
-    <link rel="stylesheet" href="./css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/8f6df53f59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="code-block">
-        <div class="code-block-heading">
-            <p> README.md </p>
-        </div>
-        
-        <div class="spacer"></div>
-
-        <div class="code-block-body">
-            <p>
-                welcome to tropicaljuice.me, my new web project that i got a free domain name for, thanks to github education.
-                this project is something i will be working on everyday for the rest of 2025.
-                if you would like to suggest anything, feel free to let me know.
-                if you want more information, i plan to use the <a href="https://github.com/snoopyriley/tropical-juice/wiki">wiki</a> to keep progress updates and feature releases.
-                huge thanks to my friend emma for giving me the name of the website.
-            </p>
-        </div>
+    <div class="bg" aria-hidden="true">
+        <div class="bg-blob bg-blob--1"></div>
+        <div class="bg-blob bg-blob--2"></div>
+        <div class="bg-blob bg-blob--3"></div>
     </div>
+
+    <main class="page">
+        <header class="site-header">
+            <a class="logo" href="/">tropicaljuice<span class="logo-dot">.</span>me</a>
+            <span class="status-pill">sandbox mode</span>
+        </header>
+
+        <section class="hero">
+            <p class="hero-eyebrow">personal web project · 2025</p>
+            <h1 class="hero-title">
+                fresh juice<br>
+                <span class="hero-title-accent">for the internet</span>
+            </h1>
+            <p class="hero-lede">
+                A little corner of the web I'm building every day — experiments, projects, and whatever else feels worth squeezing in.
+            </p>
+        </section>
+
+        <section class="panel">
+            <div class="panel-header">
+                <span class="panel-dot"></span>
+                <span class="panel-dot"></span>
+                <span class="panel-dot"></span>
+                <span class="panel-label">README.md</span>
+            </div>
+            <div class="panel-body">
+                <p>
+                    Welcome to tropicaljuice.me — my new web project that I got a free domain name for, thanks to GitHub Education.
+                    This is something I'll be working on every day for the rest of 2025.
+                </p>
+                <p>
+                    If you'd like to suggest anything, feel free to let me know.
+                    For progress updates and feature releases, check the
+                    <a href="https://github.com/snoopyriley/tropical-juice/wiki">wiki</a>.
+                </p>
+                <p class="panel-note">
+                    Huge thanks to my friend Emma for giving me the name of the website.
+                </p>
+            </div>
+        </section>
+
+        <nav class="link-row" aria-label="Quick links">
+            <a class="link-card" href="https://github.com/snoopyriley/tropical-juice/wiki">
+                <span class="link-card-label">Wiki</span>
+                <span class="link-card-desc">Progress &amp; releases</span>
+            </a>
+            <a class="link-card" href="https://github.com/snoopyriley/tropical-juice">
+                <span class="link-card-label">GitHub</span>
+                <span class="link-card-desc">Source code</span>
+            </a>
+            <a class="link-card link-card--muted" href="#">
+                <span class="link-card-label">More soon</span>
+                <span class="link-card-desc">Projects landing here</span>
+            </a>
+        </nav>
+
+        <footer class="site-footer">
+            <p>&copy; 2025 Riley Smith · built with too much caffeine</p>
+        </footer>
+    </main>
 </body>
 </html>
