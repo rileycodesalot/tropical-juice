@@ -1,15 +1,15 @@
 /* ── tweak colors here ── */
 :root {
     --bg: #0a0a0a;
-    --box-bg: #222;
-    --box-border: #666;
-    --text: #eee;
-    --text-dim: #aaa;
-    --link: #e46eff;
-    --link-hover: #ffcc00;
-    --pink: #ff69b4;
-    --green: #00ff88;
-    --yellow: #ffcc00;
+    --box-bg: #1a1a22;
+    --box-border: #3d3550;
+    --text: #e8e4f0;
+    --text-dim: #9a92ad;
+
+    --purple: #e46eff;
+    --purple-dim: #a855c7;
+    --green: #5cdb95;
+    --green-dim: #3da870;
 
     --font-main: "Poppins", Arial, sans-serif;
     --font-mono: "IBM Plex Mono", "Courier New", monospace;
@@ -32,27 +32,25 @@ body {
 }
 
 a {
-    color: var(--link);
+    color: var(--purple);
     font-weight: 700;
 }
 
 a:hover {
-    color: var(--link-hover);
+    color: var(--green);
 }
 
-/* starfield bg — very geocities */
 .stars {
     position: fixed;
     inset: 0;
     z-index: 0;
     background:
-        radial-gradient(1px 1px at 20% 30%, #fff8, transparent),
-        radial-gradient(1px 1px at 60% 70%, #fff6, transparent),
-        radial-gradient(1px 1px at 80% 10%, #fff8, transparent),
-        radial-gradient(1px 1px at 40% 80%, #fff5, transparent),
-        radial-gradient(1px 1px at 90% 50%, #fff7, transparent),
-        radial-gradient(1px 1px at 10% 60%, #fff6, transparent),
-        radial-gradient(1px 1px at 70% 20%, #fff8, transparent),
+        radial-gradient(1px 1px at 20% 30%, #e46eff33, transparent),
+        radial-gradient(1px 1px at 60% 70%, #5cdb9533, transparent),
+        radial-gradient(1px 1px at 80% 10%, #e46eff22, transparent),
+        radial-gradient(1px 1px at 40% 80%, #5cdb9522, transparent),
+        radial-gradient(1px 1px at 90% 50%, #e46eff28, transparent),
+        radial-gradient(1px 1px at 10% 60%, #5cdb9528, transparent),
         var(--bg);
     pointer-events: none;
 }
@@ -90,7 +88,7 @@ a:hover {
     overflow: hidden;
     margin-bottom: 22px;
     padding: 6px 0;
-    background: #111;
+    background: #12101a;
     border-top: 2px solid var(--box-border);
     border-bottom: 2px solid var(--box-border);
 }
@@ -99,7 +97,7 @@ a:hover {
     margin: 0;
     font-family: var(--font-mono);
     font-size: 12px;
-    color: var(--pink);
+    color: var(--purple-dim);
     white-space: nowrap;
     animation: scroll 14s linear infinite;
 }
@@ -114,7 +112,7 @@ a:hover {
     margin-bottom: 18px;
     border: 3px solid var(--box-border);
     background: var(--box-bg);
-    box-shadow: 6px 6px 0 #000;
+    box-shadow: 6px 6px 0 #080810;
     text-align: left;
 }
 
@@ -126,14 +124,14 @@ a:hover {
     font-family: var(--font-mono);
     font-size: 13px;
     font-weight: 700;
-    color: var(--link);
-    background: #333;
+    color: var(--purple);
+    background: #221e2e;
     border-bottom: 2px solid var(--box-border);
 }
 
-.box-top--pink {
+.box-top--green {
     justify-content: center;
-    color: var(--pink);
+    color: var(--green);
 }
 
 .box-top-note {
@@ -148,7 +146,7 @@ a:hover {
 
 .box-body p {
     margin: 0 0 12px;
-    color: #ccc;
+    color: var(--text-dim);
     font-size: 14px;
 }
 
@@ -173,7 +171,8 @@ a:hover {
 }
 
 .link-soon {
-    color: #666;
+    color: var(--purple-dim);
+    opacity: 0.5;
     font-family: var(--font-mono);
     font-size: 14px;
 }
@@ -185,13 +184,13 @@ a:hover {
     font-family: var(--font-mono);
     font-size: 13px;
     color: var(--text-dim);
-    border: 2px inset #444;
-    background: #1a1a1a;
+    border: 2px inset var(--box-border);
+    background: #12101a;
     display: inline-block;
 }
 
 .visitor-num {
-    color: var(--yellow);
+    color: var(--green);
     font-weight: 700;
     letter-spacing: 0.15em;
 }
@@ -199,7 +198,8 @@ a:hover {
 .stats-note {
     margin: 4px 0 0;
     font-size: 10px;
-    color: #555;
+    color: var(--purple-dim);
+    opacity: 0.6;
 }
 
 /* ── footer ── */
@@ -209,7 +209,7 @@ a:hover {
 
 .site-footer hr {
     border: none;
-    border-top: 2px dashed #444;
+    border-top: 2px dashed var(--box-border);
     margin: 0 0 16px;
 }
 
@@ -221,16 +221,16 @@ a:hover {
 
 .footer-small {
     font-size: 10px !important;
-    color: #555 !important;
+    opacity: 0.6;
 }
 
 /* ── legacy utility ── */
 .cta-button {
-    background-color: #ffffff14;
-    color: #ffffff;
+    background-color: #e46eff14;
+    color: var(--purple);
     padding: 10px 28px;
-    border: solid 2px white;
-    box-shadow: 4px 4px 0 #000;
+    border: solid 2px var(--purple);
+    box-shadow: 4px 4px 0 #080810;
     margin-left: 20px;
     text-decoration: none;
     font-family: var(--font-main);
@@ -240,8 +240,9 @@ a:hover {
 
 .cta-button:hover {
     text-decoration: none;
-    background-color: #ffffff24;
-    color: #ffffff;
+    background-color: #5cdb9514;
+    border-color: var(--green);
+    color: var(--green);
 }
 
 @media (prefers-reduced-motion: reduce) {
