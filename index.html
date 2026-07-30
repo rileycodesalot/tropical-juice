@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/grid-layout.css">
 </head>
 <body>
     <div class="stars" aria-hidden="true"></div>
@@ -26,34 +27,36 @@
             <p class="marquee">welcome welcome welcome · still figuring this out · updates soon maybe · thanks for visiting ·</p>
         </div>
 
-        <section class="box box--readme">
-            <div class="box-top">
-                <span>README.md</span>
-                <span class="box-top-note">(important)</span>
-            </div>
-            <div class="box-body">
-                <p>
-                    welcome to tropicaljuice.me, my new web project that i got a free domain name for, thanks to github education.
-                    this project is something i will be working on everyday for the rest of 2025.
-                </p>
-                <p>
-                    if you would like to suggest anything, feel free to let me know.
-                    if you want more information, i plan to use the <a href="https://github.com/snoopyriley/tropical-juice/wiki">wiki</a> to keep progress updates and feature releases.
-                </p>
-                <p class="shoutout">
-                    huge thanks to my friend emma for giving me the name of the website.
-                </p>
-            </div>
-        </section>
+        <div class="box-grid">
+            <section class="box box--readme">
+                <div class="box-top">
+                    <span>README.md</span>
+                    <span class="box-top-note">(important)</span>
+                </div>
+                <div class="box-body">
+                    <p>
+                        welcome to tropicaljuice.me, my new web project that i got a free domain name for, thanks to github education.
+                        this project is something i will be working on everyday for the rest of 2025.
+                    </p>
+                    <p>
+                        if you would like to suggest anything, feel free to let me know.
+                        if you want more information, i plan to use the <a href="https://github.com/snoopyriley/tropical-juice/wiki">wiki</a> to keep progress updates and feature releases.
+                    </p>
+                    <p class="shoutout">
+                        huge thanks to my friend emma for giving me the name of the website.
+                    </p>
+                </div>
+            </section>
 
-        <section class="box">
-            <div class="box-top box-top--green">links !!</div>
-            <div class="box-body box-body--links">
-                <a href="https://github.com/snoopyriley/tropical-juice/wiki">→ wiki (progress stuff)</a>
-                <a href="https://github.com/snoopyriley/tropical-juice">→ github repo</a>
-                <span class="link-soon">→ more pages coming... probably</span>
-            </div>
-        </section>
+            <section class="box">
+                <div class="box-top box-top--green">links !!</div>
+                <div class="box-body box-body--links">
+                    <a href="https://github.com/snoopyriley/tropical-juice/wiki">→ wiki (progress stuff)</a>
+                    <a href="https://github.com/snoopyriley/tropical-juice">→ github repo</a>
+                    <span class="link-soon">→ more pages coming... probably</span>
+                </div>
+            </section>
+        </div>
 
         <aside class="stats">
             <p>you are visitor #<span class="visitor-num">000042</span></p>
