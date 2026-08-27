@@ -1,4 +1,4 @@
-# tropicaljuice.me
+# tropicaljuice.me - sandbox mode
 welcome to tropicaljuice.me, my new web project that i got a free domain name for, thanks to github education.
 
 this project is something i will be working on everyday for the rest of 2025.
